@@ -4170,9 +4170,9 @@ input, select, textarea {
 @import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");
 .container {
   margin: auto;
-  padding: 0 1rem;
-  max-width: 71.25rem;
-  width: 100%;
+  padding: ;
+  width: 70%;
+  
 }
 
 .grid {
@@ -4717,47 +4717,10 @@ input, select, textarea {
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Barlow', sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  color: #787878;
- 
-  text-rendering: optimizeLegibility;
-}
 
-ul li {
-  margin: 0 1.5rem 0 0;
-}
 
-a {
-  color: #787878;
-  text-decoration: none;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-a:hover {
-  color: #2e2e2e;
-}
-a.active {
-  color: #2e2e2e;
-}
 
-nav {
-  padding: 2.5rem 0 2.5rem 0;
-}
-nav ul {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: start;
-          justify-content: flex-start;
-}
-nav li {
-  font-size: 1.25rem;
-}
-nav li:nth-child(2) {
-  margin: 0;
-}
+
 
 #highlight {
   color: #ea8478;
@@ -4765,20 +4728,20 @@ nav li:nth-child(2) {
 }
 
 .gallery {
-  padding: 0 0 4rem 0;
+  padding: 10rem 0 4rem 0;
 }
 
 .img-container {
   width: 100%;
   height: 500px;
-  cursor: pointer;
+  cursor: crosshair;
   overflow: hidden;
 }
 .img-container:hover .img-content-hover {
   display: block;
 }
 
-img {
+.pf img {
   width: 100%;
   height: 500px;
   -o-object-fit: cover;
@@ -4788,7 +4751,7 @@ img {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-img:hover {
+.pf img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -4830,11 +4793,7 @@ img:hover {
   display: inline-block;
 }
 
-footer {
-  padding: 1rem 0;
-  background: #f7f7f7;
-  text-align: center;
-}
+
 
 @supports (display: grid) {
   .gallery .grid {
