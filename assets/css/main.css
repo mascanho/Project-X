@@ -3402,6 +3402,10 @@ input, select, textarea {
 			transform: translateY(0);
 			opacity: 1;
 			margin: 0 0 1.3em 0;
+			font-size: 8rem;
+			margin-bottom: auto;
+			margin-top: -7rem;
+			
 		}
 
 			#banner .logo .icon {
