@@ -1,5 +1,8 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap');
+
 
 /*
 	Solid State by HTML5 UP
@@ -251,9 +254,13 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+h2 .main_title {
+	font-size: 60px;
+}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
-		font-family: Raleway, Helvetica, sans-serif;
+		font-family: Noto Sans JP, Helvetica, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 1em 0;
@@ -3386,9 +3393,10 @@ input, select, textarea {
 /* Banner */
 
 .logo_within  {
-	width: 100px;
+	width: 80px;
 	height: auto;
 	position: relative;
+	margin-top: 10px;
 	justify-items: auto;
 	
 }
@@ -3396,7 +3404,7 @@ input, select, textarea {
 
 
 	#banner {
-		padding: 10em 0 4.75em 0 ;
+		padding: 8em 0 4.75em 0 ;
 	}
 
 		#banner .inner {
@@ -5083,3 +5091,6 @@ Button animation  */
 	   display: none; 
 	}
   }
+
+
+  
