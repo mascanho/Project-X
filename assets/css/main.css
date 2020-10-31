@@ -3024,6 +3024,7 @@ h2 .main_title {
 			margin: 1.5em 3em 1.5em 0;
 			/* width: calc(40% - 1.5em); */
 			width: 45%;
+			box-shadow:         3px 5px 26px #000;
 		}
 
 			.features article:nth-child(2n) {
