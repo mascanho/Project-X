@@ -4136,6 +4136,7 @@ h2 .main_title {
 		flex-wrap: wrap;
 		margin: auto;
 		width: 55em;
+		
 	}
 
 		#footer .inner > * {
@@ -4151,6 +4152,7 @@ h2 .main_title {
 			width: 50%;
 			float: left;
 			height: auto;
+			
 		}
 
 		#footer .inner .copyright {
