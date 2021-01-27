@@ -3459,19 +3459,22 @@ h2 .main_title {
 
 /* Banner */
 
-.logo_within  {
-	width: 80px;
+.catlogo  {
+	width: 230px;
 	height: auto;
 	position: relative;
-	margin-top: 10px;
-	justify-items: auto;
+	margin-top: -15px;
+	margin-left: -22px;
+	padding: 0;
+	margin-bottom: -3rem;
+	
 	
 }
 
 
 
 	#banner {
-		padding: 8em 0 4.75em 0 ;
+		padding: 0 0 4.75em 0 ;
 	}
 
 		#banner .inner {
