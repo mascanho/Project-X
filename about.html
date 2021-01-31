@@ -63,6 +63,7 @@
 								<!-- <div class="logo" style="font-size: 8rem; margin-top: auto;"><span class="fab fa-grunt"></span></div> -->
 								<h2>About Us</h2>
 								
+								<p class="moto2"></p>
 		
 								<p class="simple" style="text-emphasis: none;">Blackcat Marketing's inception was something that came up very naturally.
 									<br>
@@ -86,37 +87,17 @@
 						
 						</header>
 
-						<!-- Content -->
-							<!-- <div class="wrapper">
-								<div class="inner">
+					
 
-									<h2>Lorem ipsum dolor</h2>
-									<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
+						<section>
 
-									<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
+							<div class="rad2"></div>
+							<div class="line2"></div>
+							<div class="box2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit commodi quas, suscipit fugit temporibus quibusdam quaerat reprehenderit at tempore natus.</p></div>
 
-									<h3 class="major">Vitae phasellus</h3>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+						</section>
 
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
 
-								</div>
-							</div>
-
-					</section> -->
 
 				<!-- Footer -->
 				<section id="footer">
@@ -175,6 +156,35 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/gallery.js"></script>
 			<script src="assets/js/misc.js"></script>
+
+			<script>
+
+
+				const output2 = document.querySelector('.moto2');
+const text2 = 'Marketing and Media Solutions for everyday businesses.';
+
+const ResetState = (event) => {
+  output2.innerHTML = '';
+  DisplayText(text2);
+};
+
+const DisplayText = (line) => {
+  let charPosition2 = 0;
+  const waitForMilliseconds2 = 25;
+
+  setInterval(() => {
+    if (charPosition2 < line.length) {
+      output2.innerHTML += line.charAt(charPosition2);
+      charPosition2++;
+    }
+  }, waitForMilliseconds2);
+};
+
+const resetButton2 = document.querySelector('.moto2');
+
+DisplayText(text2);
+
+			</script>
 
 	</body>
 </html>

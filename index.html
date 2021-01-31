@@ -249,6 +249,10 @@
 						</div>
 					</section>
 
+
+
+
+
 			</div>
 
 		<!-- Scripts -->
@@ -260,6 +264,32 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/gallery.js"></script>
 			<script src="assets/js/misc.js"></script>
+
+			<script>
+				const output = document.querySelector('.moto');
+const text = 'Marketing and Media Solutions for everyday businesses.';
+
+const ResetState = (event) => {
+  output.innerHTML = '';
+  DisplayText(text);
+};
+
+const DisplayText = (line) => {
+  let charPosition = 0;
+  const waitForMilliseconds = 25;
+
+  setInterval(() => {
+    if (charPosition < line.length) {
+      output.innerHTML += line.charAt(charPosition);
+      charPosition++;
+    }
+  }, waitForMilliseconds);
+};
+
+const resetButton = document.querySelector('.moto');
+
+DisplayText(text);
+			</script>
 
 	</body>
 </html>
