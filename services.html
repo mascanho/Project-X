@@ -78,12 +78,17 @@
 
             <!-- FIM DA BOLHA  -->
 
+
+
             <div class="inner">
 
 
 
+                <!-- ANIMTED TEXT  -->
+                <!-- <p class="moto2"></p> -->
 
-
+                <h2 class="major" style="border: 0 !important;">Our services include...</h2>
+                <br>
 
                 <h3 class="major" id="estate">Real Estate Photography & Videography</h3>
                 <p>So you want to step up from your competitors, or just have a nice presentation to get the best results while selling your real estate? Well, Look no further! We offer you well planed vídeos and photography of your estate as you might havent
@@ -201,6 +206,32 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/gallery.js"></script>
     <script src="assets/js/misc.js"></script>
+
+    <script>
+        const output2 = document.querySelector('.moto2');
+        const text2 = 'We are very proud of what we do! We do it with passion!';
+
+        const ResetState = (event) => {
+            output2.innerHTML = '';
+            DisplayText(text2);
+        };
+
+        const DisplayText = (line) => {
+            let charPosition2 = 0;
+            const waitForMilliseconds2 = 25;
+
+            setInterval(() => {
+                if (charPosition2 < line.length) {
+                    output2.innerHTML += line.charAt(charPosition2);
+                    charPosition2++;
+                }
+            }, waitForMilliseconds2);
+        };
+
+        const resetButton2 = document.querySelector('.moto2');
+
+        DisplayText(text2);
+    </script>
 
 
 </body>
