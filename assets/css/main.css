@@ -2138,22 +2138,22 @@ input[type='radio']+label:before {
     border-radius: 100%;
 }
 
-::-webkit-input-placeholder {
+ ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.35) !important;
     opacity: 1;
 }
 
-:-moz-placeholder {
+ :-moz-placeholder {
     color: rgba(255, 255, 255, 0.35) !important;
     opacity: 1;
 }
 
-::-moz-placeholder {
+ ::-moz-placeholder {
     color: rgba(255, 255, 255, 0.35) !important;
     opacity: 1;
 }
 
-:-ms-input-placeholder {
+ :-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.35) !important;
     opacity: 1;
 }
@@ -4577,8 +4577,8 @@ ANIMATION ON THE INDEX PAGE
     margin: 0 auto;
     display: block;
     position: relative;
-    width: 61px;
-    height: 61px;
+    width: 91px;
+    height: 91px;
     top: 18px;
     background-color: rgba(250, 250, 250, 0.1);
     border: 3px solid rgba(100, 200, 250, 0.5);
@@ -4586,11 +4586,25 @@ ANIMATION ON THE INDEX PAGE
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    animation: inout 1s ease infinite;
+}
+
+@keyframes inout {
+    0% {
+        -webkit-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.4);
+        -moz-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+        -moz-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
 }
 
 .rad2:hover {
     top: 17px;
-    border: 4px solid #fafafa;
+    border: 3px solid #fafafa;
 }
 
 .line2 {
@@ -4617,12 +4631,14 @@ ANIMATION ON THE INDEX PAGE
     height: 0;
     top: 30px;
     opacity: 0.2;
-    background-color: rgba(255, 255, 255, 0.383);
+    /* background-color: rgba(255, 255, 255, 0.383); */
     font: 0.8em 'Open Sans';
     text-align: center;
     line-height: 30px;
     color: rgb(255, 255, 255);
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .box2>p {
@@ -4656,4 +4672,46 @@ section .bubble .rad2 img {
     top: 20%;
     left: 20%;
     align-items: center;
+}
+
+.copyright div {
+    /* border-radius: 30px; */
+}
+
+.copyright .language {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.language div p {
+    height: auto;
+    width: auto;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+div .portuguese {
+    background-color: rgba(25, 248, 17, 0.265);
+    margin-right: 0.2em
 }
