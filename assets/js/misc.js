@@ -13,7 +13,12 @@ function changeLanguage() {
     alert('You have selcted Portuguese 🇵🇹  ')
     setTimeout(window.location.href = "#", 1 * 10000);
 
+
+
+
 }
+
+
 
 
 // Sending use to another link after a timeout
