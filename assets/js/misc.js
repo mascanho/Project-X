@@ -28,3 +28,17 @@ function changeLanguage() {
 // Sending use to another link after a timeout
 
 // setTimeout("window.location.href = 'http://walkerwines.com.au/' ", 5 * 1000);
+
+// When it click the CSS class .english
+const modalBtn = document.querySelector('.english');
+const modalBg = document.querySelector('.modal-bg');
+const modalClose = document.querySelector('.modal-close')
+
+modalBtn.addEventListener('click', function() {
+    modalBg.classList.add('bg-active');
+});
+
+modalClose.addEventListener('click', function() {
+    modalBg.classList.remove('bg-active');
+
+});
