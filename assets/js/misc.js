@@ -31,7 +31,10 @@ function changeLanguage() {
 
 // When it click the CSS class .english
 const modalBtn = document.querySelector('.english');
+
+
 const modalBg = document.querySelector('.modal-bg');
+
 const modalClose = document.querySelector('.modal-close')
 
 modalBtn.addEventListener('click', function() {

@@ -4616,7 +4616,7 @@ ANIMATION ON THE INDEX PAGE
     }
     
     .rad2:hover {
-        top: 17px;
+        top: 18px;
         border: 3px solid #fafafa;
     }
     
@@ -4694,7 +4694,7 @@ ANIMATION ON THE INDEX PAGE
         display: inline-block;
         position: relative;
         align-items: center;
-        margin: 1.1em 0 0 0.7em;
+        margin: 1em 0 0 0.7em;
     }
     
     .copyright {
@@ -4782,7 +4782,8 @@ ANIMATION ON THE INDEX PAGE
         flex-direction: column;
         margin-top: 8rem;
         position: relative;
-        border-radius: 20px;
+        border-radius: 30px;
+        s
     }
     
     .modal-close {
