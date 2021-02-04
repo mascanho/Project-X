@@ -69,3 +69,22 @@ function outsideClick(e) {
     modal.style.display = 'none';
   }
 }
+
+const tooltip = document.querySelector('.notification');
+const clicTooltip = document.querySelector('.new-container');
+
+// Events
+tooltip.addEventListener('click', openToolTip);
+clicTooltip.addEventListener('click', openToolTip);
+window.addEventListener('click', closeTooltip);
+
+// Open
+function openToolTip() {
+  tooltip.style.display = 'block';
+}
+
+function closeTooltip(e) {
+  if (e.target == tooltip) {
+    tooltip.style.display = 'none';
+  }
+}

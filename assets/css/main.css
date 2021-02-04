@@ -2807,6 +2807,7 @@ button:disabled,
   font-size: 10px;
   font-weight: 700;
   border-radius: 20px;
+  cursor: pointer;
   /* animation: float 1s ease-in-out infinite; */
 }
 
@@ -4884,4 +4885,25 @@ section.bubble-index {
   to {
     opacity: 1;
   }
+}
+
+.notification {
+  border: 1px solid white;
+  padding: 10px 10px;
+  align-items: center;
+  text-align: center;
+  height: 10%;
+  width: 100%;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.185);
+  border-radius: 20px;
+  float: right;
+}
+
+.notification p {
+  margin-top: 0;
+}
+
+#extra {
+  display: ;
 }
