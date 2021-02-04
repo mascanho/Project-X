@@ -25,18 +25,47 @@ function changeLanguage() {
 // setTimeout("window.location.href = 'http://walkerwines.com.au/' ", 5 * 1000);
 
 // When it click the CSS class .english
-const modalBtn = document.querySelector('.english');
+// const modalBtn = document.querySelector('.english');
 
-const modalBg = document.querySelector('.modal-bg');
+// const modalBg = document.querySelector('.modal-bg');
 
-const modalClose = document.querySelector('.modal-close');
+// const modalClose = document.querySelector('.modal-close');
 
-modalBtn.addEventListener('click', function () {
-  modalBg.classList.add('bg-active');
-});
+// modalBtn.addEventListener('click', function () {
+//   modalBg.classList.add('bg-active');
+// });
 
-modalClose.addEventListener('click', function () {
-  modalBg.classList.remove('bg-active');
-});
+// modalClose.addEventListener('click', function () {
+//   modalBg.classList.remove('bg-active');
+// });
 
 // TESTING
+
+// MODAL
+
+// Get DOM Elements
+const modal = document.querySelector('#my-modal');
+const modalBtn = document.querySelector('.english');
+const closeBtn = document.querySelector('.close');
+
+// Events
+modalBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
+
+// Open
+function openModal() {
+  modal.style.display = 'block';
+}
+
+// Close
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+// Close If Outside Click
+function outsideClick(e) {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
+}
