@@ -2940,7 +2940,7 @@
     
     #header nav a:before {
         float: right;
-        margin-left: 0.75em;
+        
     }
     
     #header nav a[href='#menu'] {
@@ -4832,4 +4832,8 @@ ANIMATION ON THE INDEX PAGE
         right: 10px;
         font-weight: bold;
         cursor: pointer;
+    }
+
+    #clear {
+        display: none;
     }
