@@ -2793,37 +2793,50 @@ button:disabled,
 }
 
 .new-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: auto;
-  margin-right: 3em;
-  margin-bottom: 8em;
-  text-align: right;
-  max-width: 1%;
-  width: 2em;
-  height: 15px;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+  justify-content: flex-end;
   margin-bottom: 22px;
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
   font-size: 10px;
   font-weight: 700;
   border-radius: 20px;
-  cursor: pointer;
+
   /* animation: float 1s ease-in-out infinite; */
 }
 
-.new-container div {
-  padding: 0 5px;
-  background-color: rgba(255, 0, 0, 0.348);
-  border: 1px solid rgba(0, 0, 0, 0.224);
-  border-radius: 30px;
+.new-container i {
+  font-size: 15px;
+  margin: 0;
+  color: grey;
+  padding: 3px 4px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
-.new-container .high-res {
-  font-size: 10px;
-  border: 0;
-  color: rgba(26, 4, 88, 0.69);
-  background-color: transparent;
-  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+.new-container i:hover {
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}
+
+.new-container span {
+  padding: 2px 4px;
+  background-color: rgba(255, 0, 0, 0.348);
+  border: 1px solid rgba(10, 5, 5, 0.224);
+  border-radius: 30px;
+  height: 100%;
+  width: inherit;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.new-container .branding {
+  background-color: rgba(0, 128, 0, 0.281);
 }
 
 .features article:nth-child(2n) {
@@ -4619,19 +4632,6 @@ ANIMATION ON THE INDEX PAGE
   }
 }
 
-.avatar {
-  width: 100px;
-  height: 100px;
-  box-sizing: border-box;
-  border: 5px black solid;
-  border-radius: 50%;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-  transform: translatey(0px);
-  animation: float 6s ease-in-out infinite;
-  background-color: red;
-}
 /* POP UP MENU INICIO */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -4900,10 +4900,10 @@ section.bubble-index {
   float: right;
 }
 
-.notification p {
-  margin-top: 0;
+.notification .show {
+  display: block;
 }
 
-#extra {
-  display: ;
+.notification p {
+  margin-top: 0;
 }
