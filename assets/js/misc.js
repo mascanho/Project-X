@@ -84,7 +84,7 @@ function openToolTip() {
 }
 
 function closeTooltip(e) {
-  if (e.target == tooltip) {
+  if (e.target === tooltip) {
     tooltip.style.display = 'none';
   }
 }
