@@ -58,7 +58,7 @@
 }
 .modal-info .content-wrapper .close-info {
   position: absolute;
-  right: 1px;
+  right: 20px;
   top: 10px;
   display: flex;
   align-items: center;
@@ -80,22 +80,24 @@
   height: 0.125rem;
   background-color: black;
 }
-button .close-info {
-  background-color: red;
-}
 
 .modal-info .content-wrapper .close-info:before {
   transform: rotate(-45deg);
+  border: none;
 }
 .modal-info .content-wrapper .close-info:after {
   transform: rotate(45deg);
+  border: none;
 }
 .modal-info .content-wrapper .close-info:hover {
   transform: rotate(360deg);
+  color: black;
+  border: none;
 }
 .modal-info .content-wrapper .close-info:hover:before,
 .modal-info .content-wrapper .close-info:hover:after {
-  background-color: tomato;
+  background-color: rgb(0, 0, 0);
+  border: none;
 }
 .modal-info .content-wrapper .modal-info-header {
   position: relative;
@@ -172,10 +174,16 @@ button .close-info {
 }
 
 .modal-info .content-wrapper .modal-info-footer {
-  color: black;
+  color: #2e3141;
   margin-left: 10px;
 }
 
 .modal-info .content-wrapper .modal-info-footer i {
   padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .modal-info .content-wrapper {
+    width: 90%;
+  }
 }

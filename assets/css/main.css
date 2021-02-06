@@ -2797,7 +2797,7 @@ button:disabled,
   grid-template-columns: 1fr 1fr 1fr; */
   display: flex;
   justify-content: flex-end;
-
+  margin-bottom: 1em;
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
   font-size: 10px;
   font-weight: 700;
@@ -2814,9 +2814,16 @@ button:disabled,
   padding: 3px 4px;
   margin-left: 10px;
   cursor: pointer;
-
   border: none;
   border-radius: 40px;
+}
+
+.new-container2 {
+  margin-left: 10px;
+}
+
+.new-container2 i {
+  margin-left: 10px;
 }
 
 .new-container i:hover {
@@ -2825,6 +2832,11 @@ button:disabled,
 }
 
 .new-container .fas,
+.fa {
+  animation: pulse2 2s infinite;
+}
+
+.new-container2 .fas,
 .fa {
   animation: pulse2 2s infinite;
 }
@@ -4665,8 +4677,8 @@ ANIMATION ON THE INDEX PAGE
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 110px;
-  height: 110px;
+  width: 130px;
+  height: 130px;
   top: 18px;
   background-color: rgba(250, 250, 250, 0.1);
   border: 3px solid rgba(100, 200, 250, 0.5);
@@ -4768,11 +4780,11 @@ section.bubble-index {
 }
 
 .rad2 img {
-  width: 85px;
+  width: 100px;
   display: inline-block;
   position: relative;
   align-items: center;
-  margin: 1em 0 0 0.5em;
+  margin: 1.4em 0 0 10px;
 }
 
 .copyright {
@@ -4924,4 +4936,14 @@ section.bubble-index {
 
 .notification p {
   margin-top: 0;
+}
+
+.trigger {
+  display: none;
+}
+
+.new-container2 {
+  float: left;
+  padding-top: 10px;
+  margin-left: 2px;
 }
