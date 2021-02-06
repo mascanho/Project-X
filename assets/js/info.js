@@ -9,7 +9,7 @@ function modalEvent(button) {
     const trigger = button.getAttribute('data-modal-trigger');
     const modal = document.querySelector(`[data-modal=${trigger}]`);
     const contentWrapper = modal.querySelector('.content-wrapper');
-    const close = modal.querySelector('.close');
+    const close = modal.querySelector('.close-info');
 
     close.addEventListener('click', () => modal.classList.remove('open'));
     modal.addEventListener('click', () => modal.classList.remove('open'));
