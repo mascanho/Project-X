@@ -58,7 +58,7 @@
 }
 .modal-info .content-wrapper .close-info {
   position: absolute;
-  right: 20px;
+  right: 0px;
   top: 10px;
   display: flex;
   align-items: center;
@@ -185,5 +185,19 @@
 @media screen and (max-width: 480px) {
   .modal-info .content-wrapper {
     width: 90%;
+  }
+
+  .modal-info .content-wrapper .close-info {
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .modal-info .content-wrapper {
+    width: 90%;
+    display: red;
+  }
+  .modal-info .content-wrapper .close-info {
+    right: 0;
   }
 }
