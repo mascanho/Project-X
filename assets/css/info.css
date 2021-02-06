@@ -184,11 +184,11 @@
 
 @media screen and (max-width: 480px) {
   .modal-info .content-wrapper {
-    width: 90%;
+    width: 95%;
   }
 
   .modal-info .content-wrapper .close-info {
-    right: 20px;
+    right: 2em;
   }
 }
 
