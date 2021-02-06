@@ -280,7 +280,6 @@ a:hover {
   border-bottom-color: transparent;
   color: #ffffff !important;
   transition: all 0.2s ease-in-out;
-  transform: scale(1.1);
 }
 
 a.special:not(.button) {
