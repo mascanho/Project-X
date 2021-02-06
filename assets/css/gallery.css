@@ -85,10 +85,6 @@ div#quad figure img {
   box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.8);
 }
 
-div#quad figure img:hover {
-  background-color: red;
-}
-
 div#quad figure:nth-child(1) {
   transform-origin: top left;
 }
@@ -103,9 +99,13 @@ div#quad figure:nth-child(4) {
 }
 
 .pf {
-  background-color: red;
   margin-left: 45%;
   margin-top: 5em;
+}
+
+.pf:hover {
+  background-color: antiquewhite !important;
+  color: black;
 }
 
 .expanded {
@@ -130,15 +130,6 @@ div.full figure:not(.expanded) {
   }
 }
 
-@media screen and (max-width: 736px) {
-  div#quad {
-    font-size: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
 @media screen and (max-width: 980px) {
   div#quad {
     font-size: 0;
@@ -149,15 +140,6 @@ div.full figure:not(.expanded) {
 }
 
 @media screen and (max-width: 1280px) {
-  div#quad {
-    font-size: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 1680px) {
   div#quad {
     font-size: 0;
     width: 100%;

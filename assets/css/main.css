@@ -280,6 +280,7 @@ a:hover {
   border-bottom-color: transparent;
   color: #ffffff !important;
   transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
 }
 
 a.special:not(.button) {
@@ -327,7 +328,7 @@ a.special:not(.button):before {
 }
 
 a.special:not(.button):hover:before {
-  background-color: rgba(255, 255, 255, 0.025);
+  background-color: rgba(236, 236, 236, 0.767);
 }
 
 a.special:not(.button):active:before {
@@ -1023,49 +1024,6 @@ ul.actions.fit.stacked {
   width: 100%;
 }
 
-@media screen and (max-width: 480px) {
-  ul.actions:not(.fixed) {
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-left: 0;
-    width: 100% !important;
-  }
-  ul.actions:not(.fixed) li {
-    -moz-flex-grow: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-grow: 1;
-    flex-grow: 1;
-    -moz-flex-shrink: 1;
-    -webkit-flex-shrink: 1;
-    -ms-flex-shrink: 1;
-    flex-shrink: 1;
-    padding: 1em 0 0 0;
-    text-align: center;
-    width: 100%;
-  }
-  ul.actions:not(.fixed) li > * {
-    width: 100%;
-  }
-  ul.actions:not(.fixed) li:first-child {
-    padding-top: 0;
-  }
-  ul.actions:not(.fixed) li input[type='submit'],
-  ul.actions:not(.fixed) li input[type='reset'],
-  ul.actions:not(.fixed) li input[type='button'],
-  ul.actions:not(.fixed) li button,
-  ul.actions:not(.fixed) li .button {
-    width: 100%;
-  }
-  ul.actions:not(.fixed) li input[type='submit'].icon:before,
-  ul.actions:not(.fixed) li input[type='reset'].icon:before,
-  ul.actions:not(.fixed) li input[type='button'].icon:before,
-  ul.actions:not(.fixed) li button.icon:before,
-  ul.actions:not(.fixed) li .button.icon:before {
-    margin-left: -0.5rem;
-  }
-}
 /* Icons */
 
 ul.icons {
