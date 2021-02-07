@@ -100,7 +100,7 @@ div#quad figure:nth-child(4) {
 
 .pf {
   margin-left: 45%;
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 .pf:hover {
@@ -119,15 +119,22 @@ div.full figure:not(.expanded) {
 }
 
 .gallery-general {
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 @media screen and (max-width: 480px) {
   div#quad {
     font-size: 0;
     width: 100%;
-
+    margin-top: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .gallery-general {
+    margin-top: 2em;
+  }
+
+  div#quad figure {
+    padding: 10px;
   }
 }
