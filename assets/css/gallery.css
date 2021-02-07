@@ -122,6 +122,16 @@ div.full figure:not(.expanded) {
   margin-top: 2em;
 }
 
+@media screen and (max-width: 980px) {
+  div#quad {
+    font-size: 0;
+    width: 100%;
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 480px) {
   div#quad {
     font-size: 0;
