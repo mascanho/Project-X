@@ -111,6 +111,7 @@ div#quad figure:nth-child(4) {
 .expanded {
   transform: scale(1.8);
   z-index: 5;
+  display: inline-block;
 }
 
 div.full figure:not(.expanded) {
@@ -125,24 +126,7 @@ div.full figure:not(.expanded) {
   div#quad {
     font-size: 0;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
 
-@media screen and (max-width: 980px) {
-  div#quad {
-    font-size: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  div#quad {
-    font-size: 0;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
