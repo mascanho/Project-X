@@ -135,7 +135,7 @@ div.full figure:not(.expanded) {
     font-size: 0;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -144,6 +144,6 @@ div.full figure:not(.expanded) {
     font-size: 0;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
