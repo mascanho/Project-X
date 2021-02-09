@@ -145,7 +145,7 @@ div.full figure:not(.expanded) {
     }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1024px) {
     div#quad {
         font-size: 0;
         width: 100%;
