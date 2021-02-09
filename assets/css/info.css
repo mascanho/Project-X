@@ -54,7 +54,6 @@ div .features .trigger {}
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
     width: 50%;
     margin: 0;
@@ -153,6 +152,10 @@ div .features .trigger {}
     width: 100%;
     margin: 0;
     padding: 1.875rem 0 0;
+}
+
+.modal-info .content-wrapper .modal-info-footer i {
+    cursor: pointer;
 }
 
 .modal-info .content-wrapper .modal-info-footer .action {
