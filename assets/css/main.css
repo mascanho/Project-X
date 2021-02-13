@@ -2424,7 +2424,6 @@ body.is-preload #banner p {
 }
 
 #footer .inner {
-  padding: 4rem 0 0 0;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -2507,7 +2506,7 @@ body.is-preload #banner p {
 @media screen and (max-width: 980px) {
   #footer {
     margin-top: -4.75em;
-    padding-top: 4.75em;
+    padding-top: 1.75em;
   }
   #footer .inner {
     padding: 3em 3em 1em 3em;
@@ -2529,7 +2528,7 @@ body.is-preload #banner p {
 
 @media screen and (max-width: 736px) {
   #footer {
-    margin-top: -2.5em;
+    margin-top: -18.5em;
     padding-top: 2.5em;
   }
   #footer .inner {
@@ -2547,7 +2546,7 @@ body.is-preload #banner p {
   #footer .inner .copyright li {
     border-left: 0;
     display: block;
-    margin: 1em 0 0 0;
+    margin: 0 0 0 0;
     padding-left: 0;
   }
   #footer .inner .copyright li:first-child {
