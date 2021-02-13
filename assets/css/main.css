@@ -1063,6 +1063,8 @@ ul.icons li .icon:before {
 ul.contact {
   list-style: none;
   padding: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 ul.contact li {
@@ -2461,6 +2463,7 @@ body.is-preload #banner p {
   margin: 4em 0 2em 0;
   padding: 2em 0 0 0;
   width: 100%;
+  margin-top: 4em;
 }
 
 #footer .inner .copyright li {
