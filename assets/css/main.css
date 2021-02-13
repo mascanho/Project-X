@@ -3033,3 +3033,18 @@ section.bubble-index {
   line-height: 2em;
   font-weight: 500;
 }
+
+.next-page {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.next-page h5 {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.hidden-group {
+  display: none;
+}
