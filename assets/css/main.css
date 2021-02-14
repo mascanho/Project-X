@@ -3035,9 +3035,9 @@ section.bubble-index {
 }
 
 .next-page {
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
+  display: block;
+  justify-content: left;
+  text-align: left;
 }
 
 .next-page h5 {
