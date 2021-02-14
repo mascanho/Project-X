@@ -2530,7 +2530,7 @@ body.is-preload #banner p {
 
 @media screen and (max-width: 736px) {
   #footer {
-    margin-top: -18.5em;
+    margin-top: -32.5em;
     padding-top: 2.5em;
   }
   #footer .inner {
