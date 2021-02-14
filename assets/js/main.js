@@ -123,8 +123,3 @@
       if (event.keyCode == 27) $menu._hide();
     });
 })(jQuery);
-
-let moreVideos = function () {
-  let element = document.getElementById('features');
-  element.classList.toggle('hidden-group');
-};

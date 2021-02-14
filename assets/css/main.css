@@ -2460,14 +2460,13 @@ body.is-preload #banner p {
 #footer .inner .copyright {
   border-top: solid 2px rgba(255, 255, 255, 0.125);
   list-style: none;
-  margin: 4em 0 2em 0;
+  margin: 1em 0 2em 0;
   padding: 2em 0 0 0;
   width: 100%;
-  margin-top: 4em;
+  display: flex;
 }
 
 #footer .inner .copyright li {
-  border-left: solid 2px rgba(255, 255, 255, 0.125);
   color: rgba(255, 255, 255, 0.35);
   display: inline-block;
   font-size: 0.9em;
@@ -2536,12 +2535,12 @@ body.is-preload #banner p {
   }
   #footer .inner {
     padding: 2em 2em 0.1em 2em;
+    margin-top: 15rem;
   }
   #footer .inner form {
-    margin: 0 0 3em 0;
   }
   #footer .inner .contact {
-    margin: 0 0 3em 0;
+    margin: 0 0 -25px 0;
   }
 }
 
