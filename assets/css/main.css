@@ -3047,3 +3047,59 @@ section.bubble-index {
 .hidden-group {
   display: none;
 }
+
+/* ===========================================
+
+STICKY SOCIALS BANNER
+
+=========================================== */
+
+.sticky {
+  display: flex;
+  z-index: 999999;
+  width: 4.2em;
+  max-width: 4.2;
+  min-width: none;
+  height: auto;
+  justify-content: center;
+  /* background-color: #34353b; */
+  background: linear-gradient(10deg, #34353b, #333847d8);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  position: fixed;
+  top: 25rem;
+  left: -10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sticky ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin: 10px 0 10px 8px;
+}
+
+.sticky ul li {
+  list-style: none;
+  padding: 0;
+  font-size: 26px;
+  justify-content: space-between;
+}
+
+.sticky ul li:hover {
+  transform: scale(1.1);
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 736px) {
+  .sticky {
+    display: none;
+  }
+}
