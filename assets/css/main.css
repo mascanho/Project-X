@@ -101,6 +101,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  scroll-behavior: smooth;
 }
 
 article,
@@ -3057,7 +3058,7 @@ STICKY SOCIALS BANNER
 .sticky {
   display: flex;
   z-index: 999999;
-  width: 4.2em;
+  width: 3.5em;
   max-width: 4.2;
   min-width: none;
   height: auto;
@@ -3102,4 +3103,28 @@ STICKY SOCIALS BANNER
   .sticky {
     display: none;
   }
+}
+
+/* ///////////////////// COOKIES ////////////////////////////////// */
+
+.cookies {
+  width: 100%;
+  height: 4em;
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: rgba(128, 128, 128, 0.486);
+
+  padding: 20px;
+}
+
+.cookies button {
+  margin-left: 1em;
+  height: auto;
 }
