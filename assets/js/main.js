@@ -123,3 +123,22 @@
       if (event.keyCode == 27) $menu._hide();
     });
 })(jQuery);
+
+// Show on Scroll
+
+const allSections = document.querySelectorAll('.section');
+
+const revealSelection = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('hidden');
+};
+
+const sectionObserver = new IntersectionObserver(revealSelection, {
+  root: null,
+  threshold: 0.15,
+});
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add('hidden');
+});

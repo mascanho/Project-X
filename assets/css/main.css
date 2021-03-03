@@ -3071,6 +3071,7 @@ STICKY SOCIALS BANNER
   top: 25rem;
   left: -10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  animation: sticky-animate 300ms ease-in;
 }
 
 .sticky ul {
@@ -3127,4 +3128,40 @@ STICKY SOCIALS BANNER
 .cookies button {
   margin-left: 1em;
   height: auto;
+}
+
+.header {
+  animation: header-load 300ms ease-in;
+}
+
+@keyframes header-load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes sticky-animate {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.section {
+  -webkit-transition: opacity 1.2s ease-in-out;
+  -moz-transition: opacity 1.2s ease-in-out;
+  -ms-transition: opacity 1.2s ease-in-out;
+  -o-transition: opacity 1.2s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
