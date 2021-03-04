@@ -1336,14 +1336,12 @@ div .new-container .trigger i {
   cursor: pointer;
 }
 
-.new-container .fas,
-.fa {
+.new-container .pulsating {
   animation: pulse2 2s infinite;
   padding: 0;
 }
 
-.new-container2 .fas,
-.fa {
+.new-container2 .pulsating {
   animation: pulse2 2s infinite;
   padding: 0;
 }
@@ -1360,7 +1358,8 @@ div .new-container .trigger i {
   }
 }
 
-.new-container span {
+.new-container span,
+.inner .tabgroup .features span {
   padding: 2px 5px;
   background-color: rgba(255, 0, 0, 0.348);
   border: 1px solid rgba(10, 5, 5, 0.224);
@@ -3068,7 +3067,7 @@ STICKY SOCIALS BANNER
   color: rgb(0, 0, 0);
   border-radius: 10px;
   position: fixed;
-  top: 25rem;
+  top: 15rem;
   left: -10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   animation: sticky-animate 300ms ease-in;
@@ -3106,30 +3105,6 @@ STICKY SOCIALS BANNER
   }
 }
 
-/* ///////////////////// COOKIES ////////////////////////////////// */
-
-.cookies {
-  width: 100%;
-  height: 4em;
-  border: 1px solid rgb(0, 0, 0);
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 99999;
-  background-color: rgba(128, 128, 128, 0.486);
-
-  padding: 20px;
-}
-
-.cookies button {
-  margin-left: 1em;
-  height: auto;
-}
-
 .header {
   animation: header-load 300ms ease-in;
 }
@@ -3164,4 +3139,8 @@ STICKY SOCIALS BANNER
 .hidden {
   opacity: 0;
   transform: translateY(8rem);
+}
+
+.heart {
+  color: red;
 }
