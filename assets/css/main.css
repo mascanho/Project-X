@@ -2460,10 +2460,11 @@ body.is-preload #banner p {
 #footer .inner .copyright {
   border-top: solid 2px rgba(255, 255, 255, 0.125);
   list-style: none;
-  margin: 1em 0 2em 0;
+  margin: 1em 0 0 0;
   padding: 2em 0 0 0;
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 #footer .inner .copyright li {
@@ -2471,7 +2472,7 @@ body.is-preload #banner p {
   display: inline-block;
   font-size: 0.9em;
   line-height: 1;
-  margin-left: 1em;
+  /* margin-left: 1em; */
   padding: 0;
   padding-left: 1em;
   font-weight: 800;
@@ -2545,14 +2546,29 @@ body.is-preload #banner p {
 }
 
 @media screen and (max-width: 480px) {
+  #footer .inner .copyright {
+    display: flex;
+    justify-content: center;
+  }
+
   #footer .inner .copyright li {
     border-left: 0;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin: 0 0 0 0;
     padding-left: 0;
   }
   #footer .inner .copyright li:first-child {
     margin-top: 0;
+  }
+
+  #footer .inner .copyright li:nth-child(2) {
+    display: none;
+  }
+  #footer .inner .copyright li:nth-child(3) {
+    display: none;
   }
 }
 
@@ -3091,11 +3107,6 @@ STICKY SOCIALS BANNER
 }
 
 .sticky ul li:hover {
-  transform: scale(1.1);
-}
-
-.fa-facebook:hover {
-  color: #3b5998;
   transform: scale(1.1);
 }
 
