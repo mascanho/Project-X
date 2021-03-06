@@ -114,11 +114,11 @@
 $name = $_POST['name'];
 $email = $_POST['email'];
 // $phone = $_POST['phone'];
-// $website = $_POST['website'];
+$website = $_POST['website'];
 $priority = $_POST['priority'];
 // $type = $_POST['type'];
 $message = $_POST['message'];
-$formcontent=" Name: $name \n Found us on: $priority \n Message: $message";
+$formcontent=" Name: $name \n Found us on: $priority \n  $website \n Message: $message ";
 $recipient = "guerreiro.marco@sapo.pt,mascanho@sapo.pt,berbodhisattva@hotmail.com";
 $subject = "Blackcat Marketing New Contact Form";
 $mailheader = "New Form Submission From: $email \r\n";
