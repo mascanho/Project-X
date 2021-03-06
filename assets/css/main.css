@@ -2727,11 +2727,6 @@ body.is-preload #banner p {
   display: none;
 }
 
-.social,
-.copyright {
-  margin: 1rem;
-}
-
 .social li {
   display: inline-block;
 }

@@ -43,8 +43,8 @@ div .features .trigger {
   position: fixed;
   width: 100%;
   height: 100vh;
-  /* background-color: rgb(0, 0, 0);
-  transition: background-color 0.25s; */
+  background-color: rgba(0, 0, 0, 0.548);
+  transition: background-color 0.25s;
 }
 
 .modal-info.open > .content-wrapper {
@@ -59,7 +59,7 @@ div .features .trigger {
   width: 50%;
   margin: 0;
   padding: 2rem;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 0.3125rem;
   box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.5);
   transform: scale(0);
