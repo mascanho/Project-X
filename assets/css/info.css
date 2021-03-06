@@ -9,7 +9,7 @@
   font-size: 0.875rem;
   font-weight: 300;
   margin: 0;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 
 .trigger:hover {
@@ -66,6 +66,7 @@ div .features .trigger {
   transition: transform 0.25s;
   transition-delay: 0.15s;
   z-index: 1000000;
+  overflow: hidden;
 }
 
 .modal-info .content-wrapper .close-info {

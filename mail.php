@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 
 <html>
@@ -24,8 +25,6 @@
     <meta name="keywords" content="Photograhpy, Videography, Marketing, Real Estate, Photo, Video, Presentation, Artists, Bands, Homestaging, SME,  marketing">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/acordion.css">
-    <link rel="stylesheet" href="assets/css/info.css">
-
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
@@ -71,24 +70,10 @@
               <li><a href="https://www.youtube.com/channel/UCczj54zG-LBXFuXKGJjKU8A" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
               <li><a href="mailto:hello@blackcatmk.com"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
             </ul>
+  
+  
         </div>
 
-
-        <!-- POP UP WITH SUBSCRIPTION FORM -->
-        <section class="info-modal">
-            <div class="modal-info" data-modal="trigger-8">
-                <article class="content-wrapper">
-                    <button class="close-info"></button>
-                    <header class="modal-info-header">
-                        <h2>Subscribe to our newsletter</h2>
-                    </header>
-                    <div class="content">
-                        <iframe width="740" height="550" src="https://2efd2380.sibforms.com/serve/MUIEAN3WaJSBTD8cWzvAx5aTXwJSrGP3bHT4g0ZVLyGJJEcT3axIG2AcWen9GORkG38jwsFjKDJCrDYPdOyvv_wmrdH9enMki_uws8ZWEXHfDI6qYpgouzvmPkTpQc505Mgifo4Y7AYpbw_pYm9mJXH9wxF62w0z01eIc2S0K86wDnBACF8daynEMpbc5bFQUYOybPcLA70ZkGCn" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
-                    </div>
-                   
-                </article>
-            </div>
-        </section>
 
 
         <!-- Wrapper -->
@@ -121,67 +106,42 @@
             </header>
 
             <section class="inner" id="mail">
-               
-                <div class="container">
-                    <h1 class="major inner">How can we help?</h1>
-                    <form id="form" action="mail.php" method="POST">
-                        <div class="form-control">
-                        <p>Name <span>*</span></p> <input type="text" id="name" name="name" required>
-                   <small>Error Message</small>
-                    </div>
-                    <div class="form-control">
-                        <p>Email <span>*</span> </p> <input type="text" id="email" name="email" required>
-                        <!-- <p>Phone</p> <input type="text" name="phone"> -->
-                        <small>Error Message</small>
-                    </div>
-                       
-                    <div class="form-control">
-                        <p>Website</p> <input type="text" id="website" name="website" placeholder="Leave blank if you don't have one">
-                        <small>Error Message</small>
-                    </div>
-                    
-                    <div class="form-control">
-                        <p>How did you find us? <span>*</span> </p>
-                        <select name="priority" size="1" id="found" required >
-                         <option value="Instagram"></option>
-                        <option value="Instagram">Instagram</option>
-                        <option value="Facebook">Facebook</option>
-                        <option value="Google">Google</option>
-                        <option value="Word of Mouth">Word of Mouth</option>
-                        </select>
-                        <small>Error Message</small>
-                    </div>
-                        
-                        <!-- <p>Type</p>
-                        <select name="type" size="1">
-                        <option value="update">Website Update</option>
-                        <option value="change">Information Change</option>
-                        <option value="addition">Information Addition</option>
-                        <option value="new">New Products</option>
-                        </select> -->
-                        <div class="form-control">
-                        <p>Message <span>*</span> </p><textarea id="message" name="message" rows="6" cols="25" placeholder="How can we help you?" required ></textarea>
-                        <!-- <input class="button" type="reset" value="Clear"> -->
-                        <small>Error Message</small>
-                    </div>
-                    <br>
-                        <input class="button" type="submit" value="Send" onsubmit="formValidation()">
-                        </form>
-                  </div>
+               <div class="">
+                   <h3 class="moto3"></h3>
+                   <h5>Our cats are working hard to get back to you.</h5>
+                   
+               <?php
+$name = $_POST['name'];
+$email = $_POST['email'];
+// $phone = $_POST['phone'];
+$website = $_POST['website'];
+$priority = $_POST['priority'];
+// $type = $_POST['type'];
+$message = $_POST['message'];
+$formcontent=" Name: $name  \n Website: $website \n Found us on: $priority \n Type: $type \n Message: $message";
+$recipient = "guerreiro.marco@sapo.pt,mascanho@sapo.pt,berbodhisattva@hotmail.com";
+$subject = "Blackcat Marketing New Contact Form";
+$mailheader = "New Form Submission From: $email \r\n";
+mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+echo "<a href='index.html' style='text-decoration:none;color:#ff0099;font-weight:500;'> Return Home</a>";
+?>
+               </div>
             </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
 
-<br>
-<br>
 
  <!-- Footer -->
- <section id="footer" class="inner" >
+ <section id="footer" >
   <div class="inner inner-ipad">
-      <!-- <h2 class="major">Get in touch</h2>
-      <p>You can send us an email or visit our social media.</p>
-      <ul class="contact">
-          <li class="icon solid fa-envelope"><a href="mailto:blackcatmk@email.com?subject=Hello Blackcat - Inquiry about...">hello@blackcatmk.com</a></li>
-          <li class="icon brands fa-instagram"><a target=”_blank” href="https://www.instagram.com/Blackcatmkofficial">@Blackcatmkofficial</a></li>
-      </ul> -->
+      
 
       <ul class="copyright">
         
@@ -189,16 +149,31 @@
           <li>Made with &nbsp;<i class="fa fa-heart heart"></i> &nbsp;by Blackcat Marketing</li>
           <li> <a href="tc.html" target="_blank" rel="noopener noreferrer">T&Cs</a></li>
           <li> <a href="tc.html" target="_blank" rel="noopener noreferrer">Privacy</a> </li>
-          <li class="trigger" data-modal-trigger="trigger-8"> <i  class="far fa-bell"></i> Subscribe</li>      
+         
+
+          <!-- <div class="lang">
+              <div id="pt-active" class="portuguese active">
+                  <a href="#">PT</a>
+              </div>
+
+
+              <div id="en-active" class="english active">
+                  <p>EN</p>
+              </div>
+          </div> -->
           </li>
       </ul>
   
+      <ul class="copy">
+          
+      </ul>
        
+   
 
    
   </div>
 </section>
-
+</div>
 
 
     <!-- Scripts -->
@@ -206,15 +181,37 @@
     <script src="assets/js/jquery.scrollex.min.js "></script>
     <script src="assets/js/browser.min.js "></script>
     <script src="assets/js/breakpoints.min.js "></script>
-    <!-- <script src="assets/js/util.js "></script> -->
+    <script src="assets/js/util.js "></script>
     <script src="assets/js/main.js "></script>
-    <!-- <script src="assets/js/gallery.js "></script> -->
+    <script src="assets/js/gallery.js "></script>
     <script src="assets/js/misc.js "></script>
-    <script src="assets/js/info.js "></script>
-    <script src="assets/js/form.js "></script>
-    <!-- <script src="assets/js/acordion.js"></script> -->
+    <script src="assets/js/acordion.js"></script>
 
-    
+    <script>
+        const output2 = document.querySelector('.moto3');
+        const text2 = 'Wohoo, we got your message!';
+
+        const ResetState = (event) => {
+            output2.innerHTML = '';
+            DisplayText(text2);
+        };
+
+        const DisplayText = (line) => {
+            let charPosition2 = 0;
+            const waitForMilliseconds2 = 25;
+
+            setInterval(() => {
+                if (charPosition2 < line.length) {
+                    output2.innerHTML += line.charAt(charPosition2);
+                    charPosition2++;
+                }
+            }, waitForMilliseconds2);
+        };
+
+        const resetButton2 = document.querySelector('.moto3');
+
+        DisplayText(text2);
+    </script>
 
      <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9376538.js"></script>
