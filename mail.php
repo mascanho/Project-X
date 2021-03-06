@@ -164,9 +164,7 @@ echo "<a href='index.html' style='text-decoration:none;color:#ff0099;font-weight
           </li>
       </ul>
   
-      <ul class="copy">
-          
-      </ul>
+    
        
    
 
