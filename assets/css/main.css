@@ -3304,3 +3304,69 @@ textarea {
 #mail .form-control.success textarea {
   border: 1px solid green;
 }
+
+#ac-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/pop-bg.png') repeat top left transparent;
+  z-index: 99999;
+}
+#popup-cookies {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(30, 28, 41, 0.842);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-around;
+}
+
+#popup-cookies img {
+  width: 52px;
+  display: inline-block;
+}
+
+#popup-cookies p {
+  margin-top: 1.8em;
+}
+
+#popup-cookies input {
+  background-color: #ed6755;
+  border: none;
+  border-radius: 5px;
+  width: 110px;
+  padding: 2px;
+  font-size: 16px;
+  color: white;
+  box-shadow: 0px 6px 18px -5px #ed6755;
+  animation: pulse 3s infinite;
+}
+
+@media (max-width: 700px) {
+  #popup-cookies img {
+    width: 32px;
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+  #popup-cookies p {
+    font-size: 12px;
+    margin: 0 5px 0 5px;
+  }
+
+  #popup-cookies input {
+    width: 60px;
+    padding: 2px;
+    font-size: 10px;
+    margin-right: 1em;
+  }
+}

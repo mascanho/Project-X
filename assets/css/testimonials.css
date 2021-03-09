@@ -11,6 +11,7 @@
   -ms-transform: translatey(-50%);
   -o-transform: translatey(-50%);
   transform: translatey(-50%);
+  border: 1px solid red;
 }
 
 .testim h3 {
@@ -45,7 +46,7 @@
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   padding: 5px;
-  z-index: 22222222;
+  z-index: 999;
 }
 
 .testim .arrow:before {
@@ -71,7 +72,7 @@
   bottom: 50px;
   left: 0;
   display: block;
-  z-index: 3333;
+  z-index: 2;
   height: 12px;
 }
 
