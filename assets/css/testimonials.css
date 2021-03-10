@@ -11,6 +11,7 @@
   -ms-transform: translatey(-50%);
   -o-transform: translatey(-50%);
   transform: translatey(-50%);
+  justify-content: center;
 }
 
 .testim h3 {
@@ -19,7 +20,7 @@
 
 .testim .wrap {
   position: relative;
-  width: 100%;
+  width: 80%;
   max-width: 1020px;
   padding: 40px 20px;
   margin: auto;

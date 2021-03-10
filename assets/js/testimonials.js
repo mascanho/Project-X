@@ -16,7 +16,6 @@ var testim = document.getElementById('testim'),
   touchPosDiff,
   ignoreTouch = 30;
 window.onload = function () {
-  // Testim Script
   function playSlide(slide) {
     for (var k = 0; k < testimDots.length; k++) {
       testimContent[k].classList.remove('active');
