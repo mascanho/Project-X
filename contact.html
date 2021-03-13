@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
    
     <link rel="stylesheet" href="assets/css/info.css">
+    <link rel="stylesheet" href="assets/css/newsletter.css">
 
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
@@ -83,62 +84,87 @@
                         <h2>Subscribe to our newsletter</h2>
                     </header>
                     <div class="content">
-                        <iframe width="740" height="550" src="https://2efd2380.sibforms.com/serve/MUIEAN3WaJSBTD8cWzvAx5aTXwJSrGP3bHT4g0ZVLyGJJEcT3axIG2AcWen9GORkG38jwsFjKDJCrDYPdOyvv_wmrdH9enMki_uws8ZWEXHfDI6qYpgouzvmPkTpQc505Mgifo4Y7AYpbw_pYm9mJXH9wxF62w0z01eIc2S0K86wDnBACF8daynEMpbc5bFQUYOybPcLA70ZkGCn" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
-                    </div>
+                       
                    
                 </article>
             </div>
         </section>
+<!-- -- NEWSLETTER MODAL -- -->
 
 
+  <!-- /Modal -->
+  
         <!-- Wrapper -->
         <section id="wrapper" class="" style="">
             <header>
-
                 <!-- INICIO BOLHA -->
-
                 <section class="bubble">
-
                     <div class="rad2"><img src="images/b-logo.png" alt="" srcset=""></div>
                     <div class="line2"></div>
                     <div class="box2">
                         <p>“Marketing’s job is never done. It’s about perpetual motion. We must continue to innovate every day.”</p>
                     </div>
-
                     <div class="div modal-bg">
                         <div class="div modal">
-
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates consectetur aliquam neque! Exercitationem sequi ad obcaecati totam enim voluptatem fugiat commodi eligendi harum neque id fugit quam, dolorum optio ipsam.</p>
                             <span class="modal-close">X</span>
                         </div>
-
-
                     </div>
-
                 </section>
 
                 <!-- FIM DA BOLHA  -->
             </header>
-
-            <section class="inner" id="mail">
+        <section id="title" class="inner">
+            <h1 class="typing"></h1>
+        </section>
+        <section id="main-contact" class="inner">           
+            <div class="inner" id="mail-text">
+                <div class="inner">
+                    <i class="fas fa-users"></i>
+                <h1>Connect with us:</h1>                
+                <ul>
+                <li><a href="https://www.facebook.com/blackcatmkofficial" target="_blank" ><i class="fab fa-facebook" aria-hidden="true"></i> blackcatmkofficial</a></li>
+                <li><a href="https://www.instagram.com/blackcatmkofficial/ "target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i> Blackcatmkofficial </a> </li>
+                <li><a href="https://www.youtube.com/channel/UCczj54zG-LBXFuXKGJjKU8A" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i> Blackcatmkofficial</a></li>
+                </ul>
+            </div>
+            <div class="inner">
+                <i class="fas fa-question-circle"></i>
+                <h1>Got questions?</h1>                
+                <ul>
+                  
+                <li><a href="faq.html"target="_blank"><i class="fas fa-book"></i> Check our FAQ</a> </li>
+              
+                <li><a href="mailto:hello@blackcatmk.com"><i class="fas fa-envelope" aria-hidden="true"></i> hello@blackcatmk.com</a></li>
+                <li class="trigger3" data-modal-trigger="trigger-1"><a ><i class="fas fa-paw"></i> Newsletter</a> </li>
                
-                <div class="container">
-                    <h1 class="major inner">How can we help?</h1>
+                </ul>
+            </div>                
+<div class="inner">
+    <i class="fas fa-globe-americas"></i>
+                <h1>We are based in:</h1>
+                <ul>
+                <li><h5><i class="fas fa-map-marker-alt"></i> Portugal</h5></li>
+                <li> <h5><i class="fas fa-map-marker-alt"></i> United Kingdom</h5></li>
+            </ul>
+            </div>
+            </div>
+            
+<hr>
+<br>
+            <div id="mail-form" class="inner">
+                 <div class="container-form">
+                    <h1>Drop us a line</h1>
                     <form id="form" action="mail.php" method="POST">
                         <div class="form-control">
-                        <p>Name <span>*</span></p> <input type="text" id="name" name="name" required>
-                  
+                        <p>Name: <span>*</span></p> <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-control">
-                        <p>Email <span>*</span> </p> <input type="text" id="email" name="email" required>
-                         
+                        <p>Email: <span>*</span> </p> <input type="text" id="email" name="email" required>  
                     </div>
-                       
                     <div class="form-control">
                         <p>Website</p> <input type="text" id="website" name="website" placeholder="Leave blank if you don't have one">
-                      
                     </div>
-                    
                     <div class="form-control">
                         <p>How did you find us? <span>*</span> </p>
                         <select name="priority" size="1" id="found" placeholder="Select one" required  >
@@ -149,25 +175,18 @@
                         <option value="Word of Mouth">Word of Mouth</option>
                         </select>
                     </div>
-                        
-                         <br>
                         <div class="form-control">
-                        <p>Message <span>*</span> </p><textarea id="message" name="message" rows="6" cols="25" placeholder="How can we help you?" required ></textarea>
-                        <!-- <input class="button" type="reset" value="Clear">  -->
-                       
+                        <p>Message: <span>*</span> </p><textarea id="message" name="message" rows="6" cols="25" placeholder="How can we help you?" required ></textarea>
+                        <!-- <input class="button" type="reset" value="Clear">  -->                     
                     </div>
-                    <br>
+                     
                         <input class="button" type="submit" value="Send">
                         </form>
                   </div>
-            </section>
-
+            </div>
+        </section>
     <br>
-    <br>
-    <br>
-
-
-                     
+    
             <!-- Footer -->
  
  <section id="footer">
@@ -181,7 +200,7 @@
         </ul> 
         <div class="footer-socials">
             <ul>
-                <li><a href="https://www.facebook.com/blackcatmks" target="_blank" ><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/blackcatmkofficial" target="_blank" ><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                 <li><a href="https://www.instagram.com/blackcatmkofficial/ "target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                 <li><a href="https://www.youtube.com/channel/UCczj54zG-LBXFuXKGJjKU8A" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
                 <li><a href="mailto:hello@blackcatmk.com"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
@@ -192,6 +211,21 @@
     </div>
 </section>
 </div>
+
+<div class="modal" data-modal="trigger-1">
+    <article class="content-wrapper">
+      <button class="close"></button>
+      <header class="modal-header">
+        <h2>Subscribe</h2>
+      </header>
+      <div class="content">
+          <iframe width="940" height="550" src="https://2efd2380.sibforms.com/serve/MUIEAN3WaJSBTD8cWzvAx5aTXwJSrGP3bHT4g0ZVLyGJJEcT3axIG2AcWen9GORkG38jwsFjKDJCrDYPdOyvv_wmrdH9enMki_uws8ZWEXHfDI6qYpgouzvmPkTpQc505Mgifo4Y7AYpbw_pYm9mJXH9wxF62w0z01eIc2S0K86wDnBACF8daynEMpbc5bFQUYOybPcLA70ZkGCn" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+      </div>
+    </article>
+  </div>
+  </div>
+  </div>
+  </div>
 
 
     <!-- Scripts -->
@@ -204,8 +238,34 @@
     <!-- <script src="assets/js/gallery.js "></script> -->
     <script src="assets/js/misc.js "></script>
     <script src="assets/js/info.js "></script>
-    <script src="assets/js/form.js "></script>
+    <script src="assets/js/newsletter.js"></script>
+    
     <!-- <script src="assets/js/acordion.js"></script> -->
+    <script>
+        const output = document.querySelector('.typing');
+        const text = 'Lets create something awesome!';
+
+        const ResetState = (event) => {
+            output.innerHTML = '';
+            DisplayText(text);
+        };
+
+        const DisplayText = (line) => {
+            let charPosition = 0;
+            const waitForMilliseconds = 25;
+
+            setInterval(() => {
+                if (charPosition < line.length) {
+                    output.innerHTML += line.charAt(charPosition);
+                    charPosition++;
+                }
+            }, waitForMilliseconds);
+        };
+
+        const resetButton = document.querySelector('.moto');
+
+        DisplayText(text);
+    </script>
 
     
 
