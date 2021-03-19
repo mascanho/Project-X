@@ -2804,9 +2804,19 @@ ANIMATION ON THE INDEX PAGE
   background-color: #fafafa;
 }
 
+@keyframes animaterad {
+  0% {
+    background: black;
+  }
+  100% {
+    background: red;
+  }
+}
+
 .line2.open {
   opacity: 1;
   margin-top: 10px;
+  animation: animaterad 10s ease infinite;
 }
 
 .box2 {
@@ -3408,22 +3418,28 @@ textarea {
   }
 }
 
-#fact div {
-  max-width: 80%;
-  width: fit-content;
-  height: fit-content;
-  margin: 0 auto;
-  margin-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: inset 2px 2px 2px 400px rgba(0, 0, 0, 0.459);
-  border-radius: 10px;
-  padding: 15px 20px 10px 20px;
-  border: 1px solid black;
+.animated {
+  animation: animated 1s ease forwards;
 }
 
-#fact span {
-  color: #7989c2;
-  display: block;
+@keyframes animated {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.fadeout {
+  animation: fadeout 3s ease forwards;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
