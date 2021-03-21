@@ -136,5 +136,3 @@ allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add('hidden');
 });
-
-const function (=> sectionObserver)
