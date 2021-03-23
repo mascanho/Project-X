@@ -5,14 +5,7 @@ const ptNewsUrl =
 
 async function getPtNews() {
   try {
-    const res = await fetch(ptNewsUrl, {
-      method: 'GET',
-      mode: 'same-origin', // no-cors, *cors, same-origin
-      credentials: 'include', // include, *same-origin, omit
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+    const res = await fetch(ptNewsUrl);
     const { articles } = await res.json();
     // console.log(articles[0]);
 
