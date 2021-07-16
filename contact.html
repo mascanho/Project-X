@@ -158,15 +158,15 @@
                     <form id="form" action="mail.php" method="POST">
                         <div class="form-control">
                         <p>Name: <span>*</span></p> 
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required onclick="this.select()"/>
                     </div>
                     <div class="form-control">
                         <p>Email: <span>*</span> </p> 
-                        <input type="text" id="email" name="email" required>  
+                        <input type="text" id="email" name="email" required/>  
                     </div>
                     <div class="form-control">
                         <p>Website</p> 
-                        <input type="text" id="website" name="website" placeholder="Leave blank if you don't have one">
+                        <input type="text" id="website" name="website" placeholder="Leave blank if you don't have one"/>
                     </div>
                     <div class="form-control">
                         <p>How did you find us? <span>*</span> </p>
@@ -240,15 +240,15 @@
 
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js "></script>
-    <script src="assets/js/jquery.scrollex.min.js "></script>
-    <script src="assets/js/browser.min.js "></script>
-    <script src="assets/js/breakpoints.min.js "></script>
-    <script src="assets/js/main.js "></script>
-    <script src="assets/js/misc.js "></script>
-    <script src="assets/js/info.js "></script>
-    <script src="assets/js/newsletter.js"></script>
-    <script src="assets/js/facts.js"></script>
+    <script defer src="assets/js/jquery.min.js "></script>
+    <script defer src="assets/js/jquery.scrollex.min.js "></script>
+    <script defer src="assets/js/browser.min.js "></script>
+    <script defer src="assets/js/breakpoints.min.js "></script>
+    <script defer src="assets/js/main.js "></script>
+    <script defer src="assets/js/misc.js "></script>
+    <script defer src="assets/js/info.js "></script>
+    <script defer src="assets/js/newsletter.js"></script>
+    <script defer src="assets/js/facts.js"></script>
     
     <!-- <script src="assets/js/acordion.js"></script> -->
     <script>
@@ -276,12 +276,6 @@
 
         DisplayText(text);
     </script>
-
-    
-
-     <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9376538.js"></script>
-  <!-- End of HubSpot Embed Code -->
 
 </body>
 
