@@ -3125,6 +3125,12 @@ MAIL FORM
 
 ###################################################### */
 
+#mail-form {
+  position: relative;
+  clear: both;
+  z-index: 1;
+}
+
 #title {
   width: 100%;
   margin: 0 auto;
@@ -3256,6 +3262,8 @@ hr:before {
   display: flex;
   justify-content: end;
   font-size: 18px;
+  clear: both;
+  z-index: 1;
 }
 
 #main-contact h1 {
@@ -3280,6 +3288,7 @@ textarea {
   resize: vertical;
   display: flex;
   justify-content: center;
+  display: none;
 }
 
 #mail input[type='text']:focus {
